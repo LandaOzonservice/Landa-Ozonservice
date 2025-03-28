@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt oss - Landa Ozonservice</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+    background-color: #ab8f65;
+    color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 350px; /* Juster størrelsen etter behov */
+    margin-right: 10px; /* Mindre avstand mellom logo og tekst */
+    display: block; /* Fjerner ekstra mellomrom rundt bildet */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    max-width: 1200px;
+    margin: auto;
+    gap: 10px; /* Justerer avstanden mellom logo og tekst mer presist */
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header-text h2 {
+    margin: 5px 0;
+    font-size: 1.5rem;
+}
+
+.header-text p {
+    font-size: 1.1rem;
+}
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #f1e0c6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        h2 {
+            text-align: center;
+            color: #5a4b36;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.3rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        .checkbox-container input {
+            margin-right: 0.5rem;
+        }
+        button {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background-color: #5a4b36;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #5a4b36;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #ab8f65;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <div class="header-container">
+                <img src="Økonomi/Logo uten tekst.png" alt="Landa Ozonservice Logo" class="logo">
+                <div class="header-text">
+                    <h1>Landa Ozonservice</h1>
+                    <h2>Luktfritt. Hygiensk. Miljøvennlig</h2>
+                    <p>Din pålitelige partner for ozonbehandling og luktfjerning</p>
+                </div>
+            </div>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('home')">Hjem</a>
+        <a href="#" onclick="showSection('services')">Tjenester og priser</a>
+        <a href="#" onclick="showSection('about')">Om Oss</a>
+        <a href="#" onclick="showSection('contact')">Kontakt</a>
+    </nav>
+    <div class="container active" id="home">
+        <h2>Velkommen til Landa Ozonservice</h2>
+        <p>Vi tilbyr profesjonelle ozonbehandlinger for både private hjem og bedrifter.</p>
+        <p>Sliter du med kjellerlukt, røyklukt, lukt fra dyr, og andre typer lukter som ikke gir seg? Vi kan hjelpe deg med nettopp dette!</p>
+        <h3>Hva er ozon?</h3>
+        <p>Ozon (O₃) er en naturlig gass som er svært effektiv til å bryte ned luktmolekyler og bakterier. Det brukes ofte til luftrensing og fjerning av uønskede lukter. Det er mye mer effektivt fordi det trenger inn i materialer og når til kriker og kroker hvor man aldri selv vil kunne komme til.</p>
+        <h3>Er ozon farlig?</h3>
+        <p>Ja, hvis det blir brukt feil! Miljødirektoratet har forbydd salg av ozongeneratorer til privatpersoner med god grunn. Ozongass er helseskadelig for mennesker, dyr og alt annet levende. Derfor er det viktig med god kunnskap rundt faremomentene og at arbeidet utføres av professjonelle. Dette er grunnen for at ingen mennesker, dyr eller planter kan være tilstede under behandling</p>
+        <h3>Hvilke lukter kan vi fjerne?</h3>
+        <p>I hovedsak alle typer lukter, her er noen eksempler:</p>
+        <ul>
+            <li>Røyk- og nikotinlukt</li>
+            <li>Lukt etter brann/vannskader</li>
+            <li>Mugg- og fuktskader</li>
+            <li>Dyrelukt</li>
+            <li>Mat- og stekelukt</li>
+            <li>Kjemiske lukter og avgasser</li>
+            <li>Bil- og båtlukt</li>
+        </ul>
+    </div>
+    <div class="container" id="services">
+        <h2>Tjenester</h2>
+        <p>Vi tilbyr ozonbehandlinger for privatpersoner og bedrifter. Vi har fornøydgaranti: Er lukten ikke helt borte etter en behandling, kommer vi tilbake og gjør en ny kostnadsfri behandling</p>
+        
+        <h2>Veiledende priser</h2>
+        <ul>
+            <li>Bil: 1500,-</li>
+            <li>Bobil: 2500,-</li>
+            <li>Liten leilighet opp til 50kvm: 3000,-</li>
+            <li>Leilighet over 50kvm: 4000,-</li>
+            <li>Enebolig over flere etasjer: 5000,-</li>
+        </ul>
+    </div>
+    <div class="container" id="about">
+        <h2>Om Oss</h2>
+        <p>Vi er et innovativt firma som bruker moderne teknologi for å oppnå de beste resultatene innen ozonbehandling og luktfjerning. Vi er serviceinnsilt og villig til å strekke oss langt, så ta kontakt hvis du er i tvil om vi kan hjelpe så finner vi utav det ilag!.</p>
+    </div>
+    <div class="container" id="contact">
+        <h2>Kontakt oss</h2>
+        <p>Ring oss på 948 48 271</p>
+        <p>Eller</p>
+        <p>Fyll ut skjemaet, så tar vi kontakt snart!</p>
+        <form action="https://formspree.io/f/movenqoq" method="POST">
+            <label for="fornavn">Fornavn</label>
+            <input type="text" id="fornavn" name="fornavn" required>
+        
+            <label for="etternavn">Etternavn</label>
+            <input type="text" id="etternavn" name="etternavn" required>
+        
+            <label for="epost">E-post</label>
+            <input type="email" id="epost" name="email" required>
+        
+            <label for="melding">Melding</label>
+            <p>Beskriv kort problemet</p>
+            <textarea id="melding" name="melding" rows="4" required></textarea>
+        
+            <button type="submit">Send inn</button>
+        </form>
+        
+    </div>
+    <footer>
+        <p>&copy; 2025 Landa Ozonservice | Org.nummer: 935 093 775</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.container');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
