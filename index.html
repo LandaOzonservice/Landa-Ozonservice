@@ -171,19 +171,29 @@
             background-color: #4a3e2c;
         }
 
-        .text-box {
-            position: absolute; /* Holder den på plass */
-            top: 70%; /* Plasserer den midt på siden */
-            right: 20px; /* Avstand fra høyre */
-            transform: translateY(-50%); /* Justerer for sentrering */
-            width: 250px; /* Bredde på boksen */
-            padding: 20px;
-            background-color: #ab8f65; /* Bakgrunnsfarge */
-            color: white; /* Tekstfarge */
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    .text-box {
+    position: absolute;
+    top: 375px;
+    right: 50px;
+    width: 220px;
+    padding: 20px;
+    background-color: #ab8f65;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
 
+/* Mobilvisning */
+@media (max-width: 768px) {
+    .text-box {
+        position: static; /* Ikke fastposisjonert på mobil */
+        width: 90%;
+        margin: 1rem auto;
+        top: auto;
+        right: auto;
+    }
+}
         footer {
             text-align: center;
             padding: 2rem;
@@ -222,7 +232,7 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="Logo/Logo.png" alt="Landa Ozonservice Logo" class="logo" loading="lazy">
+           <img src="https://landaozonservice.github.io/Landa-Ozonservice/Logo.png" alt="Landa Ozonservice Logo" class="logo">
             <div class="header-text">
                 <h1>Landa Ozonservice</h1>
                 <h2>Luktfritt. Hygiensk. Miljøvennlig</h2>
